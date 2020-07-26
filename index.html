@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssHome/estilo.css">
+    <link rel="stylesheet" href="cssHome/grid-layout.css">
+    <link rel="stylesheet" href="cssHome/reset.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   <!-- <script src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script> -->
+    <script src="jsHome/selects.js"></script>
+
+    <title>Blackout Home</title>
+
+</head>
+
+<body>
+    <div>
+    
+
+        <!-- Cabeçalho da Página -->
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="border-bottom: 2px solid black;">
+                <a href="index.html" class="navbar-brand">
+                    <img src="imgHome/logo2.png" alt="Logo" height="80px" width="120px" class="d-inline-block align-top">
+                </a> 
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
+                aria-controls="myNavbar" aria-expanded="false" aria-label="Alterna Navegação" >
+                    <span class="navbar-toggler-icon"> </span>
+                </button> <!-- menu sanduiche -->
+
+            
+
+                    <form class="form-inline my-2 my-lg-0 pesquisa" id="myNavbar" style="margin: 0 auto;" >
+                        <input type="search" class="form-control mr-sm-2" style="border-radius: 15px; width: 400px;" placeholder="O que você gostaria hoje?">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" style="border-radius: 15px;" type="submit"> Pesquisar </button>
+                    </form>
+
+                
+                    <div  id="myNavbar">  
+
+                    <img src="imgHome/iconeLogin.png" class="user" height="70" width="100" alt="Logo"> <br>
+                    
+                    <a href="#" type="link" class="login" data-toggle="modal" data-target="#myModal">
+                        Entrar
+                    </a>
+                    <a href="#" type="link" class="barra"> / </a>
+                    <a href="#" type="link" class="entrar" data-toggle="modal" data-target="#myModal2">
+                        Criar
+                    </a>
+                    
+                    </div>
+                    
+                    <!-- Caixa de Login -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModCenter" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content  bg-dark" style="color: whitesmoke; border: 2px solid Black;">
+                                <div class="modal-header" id="ModCenter">
+                                    <h5> É nosso cliente? Faça seu login </h5>
+            
+                                    <button class="close" data-dismiss="modal" type="button" aria-label="Fechar">
+                                        <span aria-hidden="true" > &CircleTimes; </span>
+                                    </button>
+                                </div>
+                                
+            
+                                <div class="modal-body">
+                                    <form action="formulario">
+                                        <div class="form-group">
+                                            <label for="mail"> Usuário: </label>
+                                            <input type="text" id="mail" class="form-control" placeholder="Digite aqui...">
+                                        </div>
+            
+                                        <div class="form-group">
+                                            <label for="pass"> Senha: </label>
+                                            <input type="password"  id="pass" class="form-control" placeholder="Digite aqui..."> <br>
+                                            <a href="#"> Esqueceu sua senha? </a>
+                                        </div>
+                                                <center> ------- Ou ------- </center> <br>
+                                        
+                                                <center>
+                                                    <button type="button" class="btn btn-primary" > Facebook </button>
+                                                </center> <br>
+
+                                                <center>
+                                                    <button type="button" class="btn btn-primary" > Google </button>
+                                                </center> <br>
+                                            Não tem cadastro? <a href="#" type="link" data-dismiss="modal" class="entrar" data-toggle="modal" data-target="#myModal2" aria-label="Fechar"> Cadastre-se. </a>
+                                    </form>
+                                </div>
+            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                        Confirmar
+                                    </button>
+            
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Caixa de cadastro -->
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="ModCenter" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content  bg-dark" style="color: whitesmoke; border: 2px solid Black;">
+                                <div class="modal-header" id="ModCenter">
+                                    <h5> Cliente novo? Cadastre-se. </h5>
+            
+                                    <button class="close" data-dismiss="modal" type="button" aria-label="Fechar">
+                                        <span aria-hidden="true" > &CircleTimes; </span>
+                                    </button>
+                                </div>
+                                
+            
+                                <div class="modal-body">
+                                    <form action="formulario">
+                                        <div class="form-group">
+                                            <label for="mail"> Nome: </label>
+                                            <input type="text" id="mail" class="form-control" placeholder="Digite aqui...">
+                                        </div>
+            
+                                        <div class="form-group">
+                                            <label for="pass"> Email: </label>
+                                            <input type="email"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                            
+                                        </div>
+
+                                        <div style="display: inline-block;">
+                                            <label for="pass"> Usuário: </label>
+                                            <input type="text"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                                <br>
+                                            <label for="pass"> Senha: </label>
+                                            <input type="password"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                                <br>
+                                            <label for="pass"> Confirme sua senha: </label>
+                                            <input type="password"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                        </div>
+
+                                        <div style="display: inline-block;">
+                                            <br>
+                                            <label for="pass"> CPF: </label>
+                                            <input type="text"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                                <br>
+                                            <label for="pass"> Telefone: </label>
+                                            <input type="tel"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                                <br>
+                                                <label for="pass"> Data de Nascimento: </label>
+                                                <input type="date"  id="pass" class="form-control" placeholder="Digite aqui...">   
+                                        </div> <br> <br>
+                                            
+                                        <div>
+                                            Sexo: <br>
+                                            <label> <input type="radio" required value="fSexo" name="rdSexo"> Masculino </label> <br>
+                                            <label> <input type="radio" required value="fSexo" name="rdSexo"> Feminino </label> <br>
+
+                                            <label > <input type="checkbox" value="valor"> Desejo receber promoções via Email. </label>
+                                        </div> <br>
+
+                                        Já é cadastrado? Faça seu <a href="#" data-toggle="modal" id="ModCenter" data-dismiss="modal"  data-target="#myModal"> login. </a>
+
+                                        
+                                        
+                                            
+                                    </form>
+                                </div>
+            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                        Cadastrar
+                                    </button>
+            
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Fechar
+                                    </button>
+                                </div>
+
+                            
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+            </nav>
+        </header> <br> <br> <br> <br>
+        <!-- Menu esquerdo -->
+
+        <div class="dropdown" style="float: left; ">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorias
+            </a>
+          
+            <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="index.html">Home</a>
+              <a class="dropdown-item" href="#">Computadores ></a>
+              <a class="dropdown-item" href="#">Notebooks ></a>
+              <a class="dropdown-item" href="#">Processadores ></a>
+              <a class="dropdown-item" href="#">HD ></a>
+              <a class="dropdown-item" href="#">Mouse ></a>
+              <a class="dropdown-item" href="#">Teclado ></a>    
+              <a class="dropdown-item" href="#">Outros ></a>    
+            </div>
+          </div>
+
+    
+
+        <!-- Menu direito -->
+    <div class="btn-group dropleft" style="float: right;">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Opções
+    </button>
+    <div class="dropdown-menu bg-dark" id="menu-direito" style="border: 2px solid black;">
+         <a href="#"> <img src="imgHome/iconeCarrinho.png" style="margin-left: 50px;" width="50" height="50" alt="Carrinho" title="Carrinho"> </a> 
+        <br> <br>
+
+         <a href="../Monte seu PC/montePC.html"> <img src="imgHome/montePC.png" style="margin-left: 40px;" width="80" height="50" alt="Monte seu PC" title="Monte seu PC"> </a> 
+        <br> <br> <br>
+
+         <a href="#"> <img src="imgHome/instagram.png" style="margin-left: 58px;" width="45" height="40" alt="instagram" title="Nosso Instagram"> </a> 
+    </div>
+    </div>
+
+
+ 
+            <!-- Corpo da página -->
+
+            <a href="#"> <img src="imgHome/suporte.png" class="suporte" data-toggle="modal" data-target="#suporte" width="100" height="100" alt="Suporte" title="Suporte"> </a>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="suporte" tabindex="-1" role="dialog" aria-labelledby="suporte" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content bg-dark" style="color: whitesmoke; border: 2px solid Black;">
+            <div class="modal-header" id="ModCenter">
+                <h5> Tire suas dúvidas aqui! </h5>
+    
+                <button class="close" data-dismiss="modal" type="button" aria-label="Fechar">
+                    <span aria-hidden="true" > &CircleTimes; </span>
+                </button>
+            </div>
+            
+    
+            <div class="modal-body">
+                <form action="formulario">
+                    <div class="form-group">
+                        <label for="nome"> Nome: </label>
+                        <input type="text" id="nome" style="margin-top: 10px;" class="form-control" placeholder="Digite aqui...">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="mail"> Email: </label>
+                        <input type="email"  id="mail" style="margin-top: 10px;" class="form-control" placeholder="Digite aqui...">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="msg"> Deixe sua mensagem para nós </label> <br>
+                        <textarea name="suporte" id="msg" style="margin-top: 10px;" cols="49" rows="5" placeholder="Escreva aqui..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    Confirmar
+                </button>
+    
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Fechar
+                </button>
+            </div>
+          </div>
+        </div>
+            </div>
+
+
+
+
+    
+           <br>
+            <script type="text/javascript">$('.carousel').carousel()</script>
+         
+<section style="margin: 0 auto; border: 1px solid#ccc;width: 90%;margin-top: 40px; ">
+<div id="carouselExampleIndicators" class="carrossel carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="#"> <img class="d-block w-100"  src="imgHome/1.jpeg" alt="Primeiro Slide"> </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#"> <img class="d-block w-100" src="imgHome/2.jpeg" alt="Segundo Slide"> </a>
+    </div>
+    <div class="carousel-item">
+      <a href="#"> <img class="d-block w-100" src="imgHome/3.jpeg" alt="Terceiro Slide"> </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>     
+ 
+</section><br> <br> <br>
+
+  <section class="container" id="1">
+    
+<div class="card-deck">
+  <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p1.png" alt="Imagem de capa do card"> </a>
+      <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >Mouse Óptico Gamer USB G203 - Logitech</h5>
+      <p class="card-text" style="color: white">R$ 350,00 Ou 12x R$29,16 
+</p>
+    </div>
+    <div class="card-footer"style="background-color: #2a2a2a">
+      <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+  <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p2.png" alt="Imagem de capa do card"> </a>
+     <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >Computador Gamer</h5>
+      <p class="card-text" style="color: white">R$ 5.149,00 Ou 12x R$ 514,90
+</p>
+    </div>
+    <div class="card-footer"style="background-color: #2a2a2a">
+      <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+  <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p3.png" alt="Imagem de capa do card"> </a>
+      <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >Monitor Gamer AGON</h5>
+    <p class="card-text" style="color: white">R$ 5.629,00 Ou 12x R$ 563,90
+</p>
+    </div>
+    <div class="card-footer"style="background-color: #2a2a2a">
+      <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+    <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p4.png" alt="Imagem de capa do card"> </a>
+      <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >SSD Kingston A400</h5>
+       <p class="card-text" style="color: white">R$ 235,00 Ou 12x R$ 23,60
+</p>
+    </div>
+    <div class="card-footer"style="background-color: #2a2a2a">
+      <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+    <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p5.png" alt="Imagem de capa do card"> </a>
+      <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >Geforce GTX 970 </h5>
+     <p class="card-text" style="color: white">R$ 1.100,00 Ou 12x R$ 113,00
+</p>
+    </div>
+    <div class="card-footer"style="background-color: #2a2a2a">
+      <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+</div> <br> <br> <br>
+
+<div class="card-deck">
+  <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p6.png" alt="Imagem de capa do card"> </a>
+      <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >Kingston HyperX Predator</h5>
+       <p class="card-text" style="color: white">R$ 1.800,00 Ou 12x R$ 183,00
+</p> 
+        </div>
+    <div class="card-footer"style="background-color: #2a2a2a">
+    <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+  <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p7.png" alt="Imagem de capa do card"> </a>
+      <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >Water Cooler Corsair H100i V2</h5>
+       <p class="card-text" style="color: white">R$ 600,00 Ou 12x R$ 63,00
+</p>
+    </div>
+    <div class="card-footer"style="background-color: #2a2a2a">
+      <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+  <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p8.png" alt="Imagem de capa do card"> </a>
+     <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >Processador AMD Ryzen 7</h5>
+       <p class="card-text" style="color: white">R$ 3.200,00 Ou 12x R$ 323,00
+</p>
+    </div>
+    <div class="card-footer"style="background-color: #2a2a2a">
+      <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+    <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p9.png" alt="Imagem de capa do card"> </a>
+     <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >Headset Gamer GAMEMAX HG9008 </h5>
+       <p class="card-text" style="color: white">R$ 230,00 Ou 12x R$ 26,00
+</p>
+    </div>
+    <div class="card-footer"style="background-color: #2a2a2a">
+      <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+    <div class="card">
+    <a href="#"> <img class="card-img-top" src="imgHome/p10.png" alt="Imagem de capa do card"> </a>
+      <div class="card-body" style="background-color: #2a2a2a">
+      <h5 class="card-title" style="color: white" >Teclado Gamer BATTLE - FLKT001</h5>
+       <p class="card-text" style="color: white">R$ 260,00 Ou 12x R$ 29,00
+</p>
+    </div>
+    <div class="card-footer" style="background-color: #2a2a2a">
+      <button type="button" class="btn btn-sm btn-primary" > Adicionar ao Carrinho </button>
+    </div>
+  </div>
+</div>
+  </section>
+
+
+ 
+
+<section style="margin: 0 auto; border: 1px solid#ccc;width: 70%;;margin-top: 40px; ">
+<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <a href="#"> <img class="d-block w-100"  src="imgHome/1.jpeg" alt="Primeiro Slide"> </a>
+    </div>
+
+    <div class="carousel-item">
+      <a href="#"> <img class="d-block w-100" src="imgHome/2.jpeg" alt="Segundo Slide"> </a>
+    </div>
+
+    <div class="carousel-item">
+      <a href="#"> <img class="d-block w-100" src="imgHome/3.jpeg" alt="Terceiro Slide"> </a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>     
+ 
+  </section><br> <br> <br>
+  <footer class="bg-dark col-12 final" style="color: whitesmoke; border-top: 2px solid black;">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm">
+                        Copyright © 2020
+                    </div>
+                    <div class="col-sm">
+                        4739-3664
+                    </div>
+                    <div class="col-sm">
+                        <a href="#"> Quem Somos </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="#"> Certificados de Segurança </a>
+                    </div>
+                </div>
+            </footer>
+
+
+   
+    <script>
+       $("#slick").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+
+       })
+       $("#slick2").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+
+       })
+       $("#slick3").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick4").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick5").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick6").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick7").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick8").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick9").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick10").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick11").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick12").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick13").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+    </script>
+
+    
+
+</body>
+
+</html>

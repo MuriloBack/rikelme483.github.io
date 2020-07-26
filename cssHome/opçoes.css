@@ -1,0 +1,332 @@
+.montePC { font-family:Arial, Helvetica, Sans-Serif; font-size:0.75em; color:#000;}
+        .desc { color:#6b6b6b;}
+        .desc a {color:#0092dd;}
+        
+            /* Processador */
+            
+        .dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px;}
+        .dropdown dd { position:relative;}
+        .dropdown a, .dropdown a:visited { color:#815b5b; text-decoration:none; outline:none;}
+        .dropdown a:hover { color:#5d4617;}
+        .dropdown dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+        .dropdown dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                        border:1px solid #d4ca9a; width:300px;}
+        .dropdown dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+        .dropdown dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                          left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px;  min-width:300px; list-style:none;}
+        .dropdown span.value { display:none;}
+        .dropdown dd ul li a { padding:3px; display:block; }
+        .dropdown dd ul li a:hover { background-color:#d0c9af;}        
+        .dropdown img.flag { border:none; vertical-align:middle; margin-left:10px; }
+        .flagvisibility { display:none;}
+
+            /* Placa Mãe */ 
+
+        .dropdown2 dd, .dropdown2 dt, .dropdown2 ul { margin:0px; padding:0px; }
+        .dropdown2 dd { position:relative; }
+        .dropdown2 a, .dropdown2 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+        .dropdown2 a:hover { color:#5d4617;}
+        .dropdown2 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+        .dropdown2 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                        border:1px solid #d4ca9a; width:300px;}
+        .dropdown2 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+        .dropdown2 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                          left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+        .dropdown2 span.value { display:none;}
+        .dropdown2 dd ul li a { padding:3px; display:block;}
+        .dropdown2 dd ul li a:hover { background-color:#d0c9af;}
+        
+        .dropdown2 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+        .flagvisibility { display:none;}
+
+        /* HD */
+
+        .dropdown3 dd, .dropdown3 dt, .dropdown3 ul { margin:0px; padding:0px; }
+        .dropdown3 dd { position:relative; }
+        .dropdown3 a, .dropdown3 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+        .dropdown3 a:hover { color:#5d4617;}
+        .dropdown3 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+        .dropdown3 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                        border:1px solid #d4ca9a; width:300px;}
+        .dropdown3 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+        .dropdown3 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                          left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+        .dropdown3 span.value { display:none;}
+        .dropdown3 dd ul li a { padding:3px; display:block;}
+        .dropdown3 dd ul li a:hover { background-color:#d0c9af;}
+        
+        .dropdown3 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+        .flagvisibility { display:none;}
+
+         /* Placa de Video */
+
+         .dropdown4 dd, .dropdown4 dt, .dropdown4 ul { margin:0px; padding:0px; }
+         .dropdown4 dd { position:relative; }
+         .dropdown4 a, .dropdown4 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+         .dropdown4 a:hover { color:#5d4617;}
+         .dropdown4 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+         .dropdown4 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                         border:1px solid #d4ca9a; width:300px;}
+         .dropdown4 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+         .dropdown4 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                           left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+         .dropdown4 span.value { display:none;}
+         .dropdown4 dd ul li a { padding:3px; display:block;}
+         .dropdown4 dd ul li a:hover { background-color:#d0c9af;}
+         
+         .dropdown4 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+         .flagvisibility { display:none;}
+
+         /* Memória RAM */
+
+         .dropdown5 dd, .dropdown5 dt, .dropdown5 ul { margin:0px; padding:0px; }
+         .dropdown5 dd { position:relative; }
+         .dropdown5 a, .dropdown5 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+         .dropdown5 a:hover { color:#5d4617;}
+         .dropdown5 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+         .dropdown5 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                         border:1px solid #d4ca9a; width:300px;}
+         .dropdown5 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+         .dropdown5 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                           left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+         .dropdown5 span.value { display:none;}
+         .dropdown5 dd ul li a { padding:3px; display:block;}
+         .dropdown5 dd ul li a:hover { background-color:#d0c9af;}
+         
+         .dropdown5 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+         .flagvisibility { display:none;}
+
+         /* SSD */
+
+         .dropdown6 dd, .dropdown6 dt, .dropdown6 ul { margin:0px; padding:0px; }
+         .dropdown6 dd { position:relative; }
+         .dropdown6 a, .dropdown6 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+         .dropdown6 a:hover { color:#5d4617;}
+         .dropdown6 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+         .dropdown6 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                         border:1px solid #d4ca9a; width:300px;}
+         .dropdown6 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+         .dropdown6 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                           left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+         .dropdown6 span.value { display:none;}
+         .dropdown6 dd ul li a { padding:3px; display:block;}
+         .dropdown6 dd ul li a:hover { background-color:#d0c9af;}
+         
+         .dropdown6 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+         .flagvisibility { display:none;}
+
+         /* Gabinete */
+
+         .dropdown7 dd, .dropdown7 dt, .dropdown7 ul { margin:0px; padding:0px; }
+         .dropdown7 dd { position:relative; }
+         .dropdown7 a, .dropdown7 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+         .dropdown7 a:hover { color:#5d4617;}
+         .dropdown7 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+         .dropdown7 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                         border:1px solid #d4ca9a; width:300px;}
+         .dropdown7 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+         .dropdown7 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                           left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+         .dropdown7 span.value { display:none;}
+         .dropdown7 dd ul li a { padding:3px; display:block;}
+         .dropdown7 dd ul li a:hover { background-color:#d0c9af;}
+         
+         .dropdown7 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+         .flagvisibility { display:none;}
+
+         /* Fonte */
+
+         .dropdown8 dd, .dropdown8 dt, .dropdown8 ul { margin:0px; padding:0px; }
+         .dropdown8 dd { position:relative; }
+         .dropdown8 a, .dropdown8 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+         .dropdown8 a:hover { color:#5d4617;}
+         .dropdown8 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+         .dropdown8 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                         border:1px solid #d4ca9a; width:300px;}
+         .dropdown8 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+         .dropdown8 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                           left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+         .dropdown8 span.value { display:none;}
+         .dropdown8 dd ul li a { padding:3px; display:block;}
+         .dropdown8 dd ul li a:hover { background-color:#d0c9af;}
+         
+         .dropdown8 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+         .flagvisibility { display:none;}
+
+         /* Water Cooler */
+
+         .dropdown9 dd, .dropdown9 dt, .dropdown9 ul { margin:0px; padding:0px; }
+         .dropdown9 dd { position:relative; }
+         .dropdown9 a, .dropdown9 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+         .dropdown9 a:hover { color:#5d4617;}
+         .dropdown9 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+         .dropdown9 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                         border:1px solid #d4ca9a; width:300px;}
+         .dropdown9 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+         .dropdown9 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                           left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+         .dropdown9 span.value { display:none;}
+         .dropdown9 dd ul li a { padding:3px; display:block;}
+         .dropdown9 dd ul li a:hover { background-color:#d0c9af;}
+         
+         .dropdown9 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+         .flagvisibility { display:none;}
+
+         /* Mouse */
+
+         .dropdown10 dd, .dropdown10 dt, .dropdown10 ul { margin:0px; padding:0px; }
+         .dropdown10 dd { position:relative; }
+         .dropdown10 a, .dropdown10 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+         .dropdown10 a:hover { color:#5d4617;}
+         .dropdown10 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+         .dropdown10 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                         border:1px solid #d4ca9a; width:300px;}
+         .dropdown10 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+         .dropdown10 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                           left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+         .dropdown10 span.value { display:none;}
+         .dropdown10 dd ul li a { padding:3px; display:block;}
+         .dropdown10 dd ul li a:hover { background-color:#d0c9af;}
+         
+         .dropdown10 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+         .flagvisibility { display:none;}
+
+         /* Teclado */
+
+         .dropdown11 dd, .dropdown11 dt, .dropdown11 ul { margin:0px; padding:0px; }
+         .dropdown11 dd { position:relative; }
+         .dropdown11 a, .dropdown11 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+         .dropdown11 a:hover { color:#5d4617;}
+         .dropdown11 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+         .dropdown11 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                         border:1px solid #d4ca9a; width:300px;}
+         .dropdown11 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+         .dropdown11 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                           left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+         .dropdown11 span.value { display:none;}
+         .dropdown11 dd ul li a { padding:3px; display:block;}
+         .dropdown11 dd ul li a:hover { background-color:#d0c9af;}
+         
+         .dropdown11 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+         .flagvisibility { display:none;}
+
+         /* HeadSet */
+
+         .dropdown12 dd, .dropdown12 dt, .dropdown12 ul { margin:0px; padding:0px; }
+         .dropdown12 dd { position:relative; }
+         .dropdown12 a, .dropdown12 a:visited { color:#815b5b; text-decoration:none; outline:none;}
+         .dropdown12 a:hover { color:#5d4617;}
+         .dropdown12 dt a:hover { color:#5d4617; border: 1px solid #080cf3;}
+         .dropdown12 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                         border:1px solid #d4ca9a; width:300px;}
+         .dropdown12 dt a span {cursor:pointer; display:block; padding:5px; padding-bottom: 20px;}
+         .dropdown12 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                           left:0px; padding:5px 0px; position:absolute; z-index: 1; top:2px; width:auto; min-width:300px; list-style:none;}
+         .dropdown12 span.value { display:none;}
+         .dropdown12 dd ul li a { padding:3px; display:block;}
+         .dropdown12 dd ul li a:hover { background-color:#d0c9af;}
+         
+         .dropdown12 img.flag { border:none; vertical-align:middle; margin-left:10px; }
+         .flagvisibility { display:none;}
+        
+
+@media (max-width: 800px){
+    .dropdown dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown2 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown2 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown3 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown3 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown4 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown4 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown5 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown5 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown6 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown6 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown7 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown7 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown8 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown8 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown9 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown9 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown10 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown10 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+
+    .dropdown11 dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+        border:1px solid #d4ca9a; width:100%;}
+    .dropdown11 dd ul { background:#e4dfcb none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+    left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:100%; list-style:none;}
+    .flag{
+        width: 80px;
+        height: 80px;
+    }
+}
