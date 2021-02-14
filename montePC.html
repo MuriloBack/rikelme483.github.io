@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssMontePc/estilo.css">
+    <link rel="stylesheet" href="cssMontePc/grid-layout.css">
+    <link rel="stylesheet" href="cssMontePc/reset.css">
+    
+
+    <title>Monte seu PC</title>
+
+</head>
+
+<body>
+
+
+        <!-- Cabeçalho da Página -->
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="border-bottom: 2px solid black;">
+                <a href="index.html" class="navbar-brand">
+                    <img src="imgMontePc/logo2.png" alt="Logo" height="80px" width="120px" class="d-inline-block align-top">
+                </a> 
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
+                aria-controls="myNavbar" aria-expanded="false" aria-label="Alterna Navegação" >
+                    <span class="navbar-toggler-icon"> </span>
+                </button> <!-- menu sanduiche -->
+
+            
+
+                    <form class="form-inline my-2 my-lg-0 pesquisa" id="myNavbar" style="margin: 0 auto;" >
+                        <input type="search" class="form-control mr-sm-2" style="border-radius: 15px; width: 400px;" placeholder="O que você gostaria hoje?">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" style="border-radius: 15px;" type="submit"> Pesquisar </button>
+                    </form>
+
+                
+                    <div  id="myNavbar">  
+
+                    <img src="imgMontePc/iconeLogin.png" class="user" height="70" width="100" alt="Logo"> <br>
+                    
+                    <a href="#" type="link" class="login" data-toggle="modal" data-target="#myModal">
+                        Entrar
+                    </a>
+                    <a href="#" type="link" class="barra"> / </a>
+                    <a href="#" type="link" class="entrar" data-toggle="modal" data-target="#myModal2">
+                        Criar
+                    </a>
+                    
+                    </div>
+                    
+                    <!-- Caixa de Login -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModCenter" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content  bg-dark" style="color: whitesmoke; border: 2px solid Black;">
+                                <div class="modal-header" id="ModCenter">
+                                    <h5> É nosso cliente? Faça seu login </h5>
+            
+                                    <button class="close" data-dismiss="modal" type="button" aria-label="Fechar">
+                                        <span aria-hidden="true" > &CircleTimes; </span>
+                                    </button>
+                                </div>
+                                
+            
+                                <div class="modal-body">
+                                    <form action="formulario">
+                                        <div class="form-group">
+                                            <label for="mail"> Usuário: </label>
+                                            <input type="text" id="mail" class="form-control" placeholder="Digite aqui...">
+                                        </div>
+            
+                                        <div class="form-group">
+                                            <label for="pass"> Senha: </label>
+                                            <input type="password"  id="pass" class="form-control" placeholder="Digite aqui..."> <br>
+                                            <a href="#"> Esqueceu sua senha? </a>
+                                        </div>
+                                                <center> ------- Ou ------- </center> <br>
+                                        
+                                                <center>
+                                                    <button type="button" class="btn btn-primary" > Facebook </button>
+                                                </center> <br>
+
+                                                <center>
+                                                    <button type="button" class="btn btn-primary" > Google </button>
+                                                </center> <br>
+                                            Não tem cadastro? <a href="#" type="link" data-dismiss="modal" class="entrar" data-toggle="modal" data-target="#myModal2" aria-label="Fechar"> Cadastre-se. </a>
+                                    </form>
+                                </div>
+            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                        Confirmar
+                                    </button>
+            
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Caixa de cadastro -->
+                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="ModCenter" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content  bg-dark" style="color: whitesmoke; border: 2px solid Black;">
+                                <div class="modal-header" id="ModCenter">
+                                    <h5> Cliente novo? Cadastre-se. </h5>
+            
+                                    <button class="close" data-dismiss="modal" type="button" aria-label="Fechar">
+                                        <span aria-hidden="true" > &CircleTimes; </span>
+                                    </button>
+                                </div>
+                                
+            
+                                <div class="modal-body">
+                                    <form action="formulario">
+                                        <div class="form-group">
+                                            <label for="mail"> Nome: </label>
+                                            <input type="text" id="mail" class="form-control" placeholder="Digite aqui...">
+                                        </div>
+            
+                                        <div class="form-group">
+                                            <label for="pass"> Email: </label>
+                                            <input type="email"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                            
+                                        </div>
+
+                                        <div style="display: inline-block;">
+                                            <label for="pass"> Usuário: </label>
+                                            <input type="text"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                                <br>
+                                            <label for="pass"> Senha: </label>
+                                            <input type="password"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                                <br>
+                                            <label for="pass"> Confirme sua senha: </label>
+                                            <input type="password"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                        </div>
+
+                                        <div style="display: inline-block;">
+                                            <br>
+                                            <label for="pass"> CPF: </label>
+                                            <input type="text"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                                <br>
+                                            <label for="pass"> Telefone: </label>
+                                            <input type="tel"  id="pass" class="form-control" placeholder="Digite aqui...">
+                                                <br>
+                                                <label for="pass"> Data de Nascimento: </label>
+                                                <input type="date"  id="pass" class="form-control" placeholder="Digite aqui...">   
+                                        </div> <br> <br>
+                                            
+                                        <div>
+                                            Sexo: <br>
+                                            <label> <input type="radio" required value="fSexo" name="rdSexo"> Masculino </label> <br>
+                                            <label> <input type="radio" required value="fSexo" name="rdSexo"> Feminino </label> <br>
+
+                                            <label > <input type="checkbox" value="valor"> Desejo receber promoções via Email. </label>
+                                        </div> <br>
+
+                                        Já é cadastrado? Faça seu <a href="#" data-toggle="modal" id="ModCenter" data-dismiss="modal"  data-target="#myModal"> login. </a>
+
+                                        
+                                        
+                                            
+                                    </form>
+                                </div>
+            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                        Cadastrar
+                                    </button>
+            
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        Fechar
+                                    </button>
+                                </div>
+
+                            
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+            </nav>
+        </header>
+        <br> <br>
+        <!-- Menu esquerdo -->
+
+        <div class="dropdown" style="float: left;">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorias
+            </a>
+          
+            <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="index.html">Home</a>
+              <a class="dropdown-item" href="#">Computadores ></a>
+              <a class="dropdown-item" href="#">Notebooks ></a>
+              <a class="dropdown-item" href="#">Processadores ></a>
+              <a class="dropdown-item" href="#">HD ></a>
+              <a class="dropdown-item" href="#">Mouse ></a>
+              <a class="dropdown-item" href="#">Teclado ></a>    
+              <a class="dropdown-item" href="#">Outros ></a>    
+            </div>
+          </div>
+
+    
+
+        <!-- Menu direito -->
+    <div class="btn-group dropleft" style="float: right;">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Opções
+    </button>
+    <div class="dropdown-menu bg-dark" id="menu-direito" style="border: 2px solid black;">
+         <a href="#"> <img src="imgMontePc/iconeCarrinho.png" style="margin-left: 50px;" width="50" height="50" alt="Carrinho" title="Carrinho"> </a> 
+        <br> <br>
+
+         <a href="montePC.html"> <img src="imgMontePc/montePC.png" style="margin-left: 40px;" width="80" height="50" alt="Monte seu PC" title="Monte seu PC"> </a> 
+        <br> <br> <br>
+
+         <a href="#"> <img src="imgMontePc/instagram.png" style="margin-left: 58px;" width="45" height="40" alt="instagram" title="Nosso Instagram"> </a> 
+    </div>
+    </div> 
+
+
+            <!-- Corpo da página -->
+
+        <a href="#"> <img src="imgMontePc/suporte.png" class="suporte" data-toggle="modal" data-target="#suporte" width="100" height="100" alt="Suporte" title="Suporte"> </a>
+            
+        <!-- Modal -->
+        <div class="modal fade" id="suporte" tabindex="-1" role="dialog" aria-labelledby="suporte" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content bg-dark" style="color: whitesmoke; border: 2px solid Black;">
+        <div class="modal-header" id="ModCenter">
+            <h5> Tire suas dúvidas aqui! </h5>
+
+            <button class="close" data-dismiss="modal" type="button" aria-label="Fechar">
+                <span aria-hidden="true" > &CircleTimes; </span>
+            </button>
+        </div>
+        
+
+        <div class="modal-body">
+            <form action="formulario">
+                <div class="form-group">
+                    <label for="nome"> Nome: </label>
+                    <input type="text" id="nome" style="margin-top: 10px;" class="form-control" placeholder="Digite aqui...">
+                </div>
+
+                <div class="form-group">
+                    <label for="mail"> Email: </label>
+                    <input type="email"  id="mail" style="margin-top: 10px;" class="form-control" placeholder="Digite aqui...">
+                </div>
+
+                <div class="form-group">
+                    <label for="msg"> Deixe sua mensagem para nós </label> <br>
+                    <textarea name="suporte" id="msg" style="margin-top: 10px;" cols="49" rows="5" placeholder="Escreva aqui..."></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                Confirmar
+            </button>
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Fechar
+            </button>
+        </div>
+      </div>
+    </div>
+        </div>
+
+
+
+
+            <section  class="container montePC" id="produtos">
+                <center> <h2> Monte seu PC </h2></center>
+                
+                <br> <br>
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="form-group">
+                        <h3> Processador </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick">
+                            <option value="Selecione" data-description="Selecione..."
+                            data-imagesrc=""></option>
+
+                            <option value="955,84" id="preço1" data-description="Á vista R$ 955,84 | No cartão em até 12x (91,55)"
+                            data-imagesrc="imgMontePc/processador.png"> (AM4) AMD Ryzen 3 3200G 3.5Ghz 6mb AM4</option>
+
+                            <option value="2" data-description="Á vista R$ 4.601,29 | No Cartão em até 12x (440,73)"
+                            data-imagesrc="imgMontePc/processador2.jpg">Intel Core I9 9900 3.1Ghz(5.0Ghz TURBO) 16mb Cache</option>
+
+                            <option value="3" data-description="Á Vista R$ 519,25 | No Cartão em até 12x (49,73)"
+                            data-imagesrc="imgMontePc/processador3.png">Intel Pentium G5400 3.7Ghz 6mb  Cache</option>
+                        </select> 
+
+                            <br>
+
+                            <h3> Placa Mãe </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick2">
+                            <option value="Selecione" data-description="Selecione..."
+                            data-imagesrc=""></option>
+
+                            <option value="1" data-description="Á vista R$ 499,90 | No cartão em até 12x (47,85)"
+                            data-imagesrc="imgMontePc/placaMae.png">Placa-Mãe ASRock A320M-HD, AMD AM4, mATX, DDR4</option>
+
+                            <option value="2" data-description="Á vista R$ 618,90 | No cartão em até 12x (55,87)"
+                            data-imagesrc="imgMontePc/placaMae2.png">Placa-Mãe Asus EX-B365M-V5, Intel LGA 1151, mATX, DDR4</option>
+
+                            <option value="3" data-description="Á vista 599,90 | No cartão em até (53,76)"
+                            data-imagesrc="imgMontePc/placaMae3.webp">Placa-Mãe Asus TUF H310M-Plus Gaming/BR, Intel LGA 1151, mATX, DDR4</option>
+                        </select>
+
+                        <br>
+
+                        <h3> HD </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick3">
+                        <option value="1" data-description="Selecione..."
+                        data-imagesrc=""></option>
+
+                            <option value="2" data-description="Á vista R$ 399,19 | No Cartão em até 12x (39,67)"
+                            data-imagesrc="imgMontePc/HD.png">HD 1000GB Sata 3 - 6Gb/s</option>
+
+                            <option value="3" data-description="Á vista R$ 799,43 | No Cartão em até 12x (78,45)"
+                            data-imagesrc="imgMontePc/HD.png">HD 2000GB Sata 3 - 6Gb/s</option>
+                        </select>
+
+                        <br>
+
+                        <h3> Placa de Video </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick4">
+                            <option value="Selecione" data-description="Selecione..."
+                            data-imagesrc=""></option>
+
+                            <option value="1" data-description="Á vista R$ 1456,98 | No Cartão em até 12x (138,76)"
+                            data-imagesrc="imgMontePc/placaVideo.png">AMD-Radeon RX 560 4GB GDDR5</option>
+
+                            <option value="2" data-description="Á vista R$ 1599,79 | No Cartão em até 12x (156,82)"
+                            data-imagesrc="imgMontePc/placaVideo2.png">Nvidia GeForce GTX 1650 4GB GDDR5</option>
+
+                            <option value="3" data-description="Á vista R$ 2593,23 | No Cartão em até 12x (250,34)"
+                            data-imagesrc="imgMontePc/placaVideo3.png">Nvidia GeForce GTX 1660 SUPER 6GB GDDR6</option>
+                        </select>
+
+                            <br>
+
+                            <h3> Memória Ram </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick5">
+                            <option value="Selecione" data-description="Selecione..."
+                            data-imagesrc=""></option>
+
+                            <option value="Monitor" data-description="Á vista R$ 367,34 | No Cartão em até 12x (35,21)"
+                            data-imagesrc="imgMontePc/memoriaRam.png">Memória DDR4 8GB 2400MHZ</option>
+
+                            <option value="Sei la" data-description="Á vista R$ 733,98 | No Cartão em até 12x (70,21)"
+                            data-imagesrc="imgMontePc/memoriaRam2.png">Memória DDR4 16GB (2x8GB) 2400GHZ</option>
+
+                            <option value="Sei la" data-description="Á vista R$ 599,29 | No Cartão em até 12x (57,40)"
+                            data-imagesrc="imgMontePc/memoriaRam3.png">Memória DDR4 3000MHZ LED RGB</option>
+                        </select>
+
+                        <br>
+
+                        <h3> SSD </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick6">
+                        <option value="Selecione" data-description="Selecione..."
+                        data-imagesrc=""></option>
+
+                            <option value="1" data-description="Á vista R$ 336,16 | No Cartão em até 12x (32,20)"
+                            data-imagesrc="imgMontePc/SSD.png">SSD 120GB Sata 3</option>
+
+                            <option value="2" data-description="Á vista R$ 459,22 | No Cartão em até 12x (43,98)"
+                            data-imagesrc="imgMontePc/SSD.png">SSD 240GB Sata 3</option>
+
+                            <option value="3" data-description="Á vista R$ 754,97 | No Cartão em até 12x (72,31)"
+                            data-imagesrc="imgMontePc/SSD.png">SSD 480GB Sata 3</option>
+                        </select>
+
+                        <br>
+
+                        <h3> Gabinete </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick7">
+                        <option value="Selecione" data-description="Selecione..."
+                        data-imagesrc=""></option>
+
+                            <option value="1" data-description="Á vista R$ 279,13 | No Cartão em até 12x (26,70)"
+                            data-imagesrc="imgMontePc/gabinete.png">RED DRAGON - BRAWN BLACK</option>
+
+                            <option value="2" data-description="Á vista R$ 233,74 | No Cartão em até 12x (22,38)"
+                            data-imagesrc="imgMontePc/gabinete2.png">K-MEX - ODYSSEY BLACK</option>
+
+                            <option value="3" data-description="Á vista R$ 559,08 | No Cartão em até 12x (53,76)"
+                            data-imagesrc="imgMontePc/gabinete3.png">K-MEX - STRIFE RGB</option>
+                        </select>
+
+                        <br>
+
+                        <h3> Fonte </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick8">
+                        <option value="Selecione" data-description="Selecione..."
+                        data-imagesrc=""></option>
+
+                            <option value="1" data-description="Á vista R$ 273,74 | No Cartão em até 12x (24,12)"
+                            data-imagesrc="imgMontePc/fonte.png">Fonte 400W PFC ATIVO</option>
+
+                            <option value="2" data-description="Á vista R$ 299,12 | No Cartão em até 12x (28,50)"
+                            data-imagesrc="imgMontePc/fonte2.png">Fonte 500W 80 PLUS</option>
+
+                            <option value="3" data-description="Á vista R$ 358,17 | No Cartão em até 12x (34,31)"
+                            data-imagesrc="imgMontePc/fonte3.png">Fonte 600W PLUS</option>
+                        </select>
+
+                        <br>
+
+                        <h3> Water Cooler </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick9">
+                        <option value="Selecione" data-description="Selecione..."
+                        data-imagesrc=""></option>
+
+                            <option value="1" data-description="Á vista R$ 311,00 | No Cartão em até 12x (29,79)"
+                            data-imagesrc="imgMontePc/waterCooler.png">Water Cooler - PCYES! 1200MM</option>
+
+                            <option value="2" data-description="Á vista R$ 421,99 | No Cartão em até 12x (40,42)"
+                            data-imagesrc="imgMontePc/waterCooler2.png">Water Cooler PCYES! 240MM</option>
+                        </select>
+
+                        <br>
+
+                        <h3> Mouse </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick10">
+                        <option value="Selecione" data-description="Selecione..."
+                        data-imagesrc=""></option>
+
+                            <option value="1" data-description="Á vista R$ 294,31 | No Cartão em até 12x (28,19)"
+                            data-imagesrc="imgMontePc/mouse.png">Mouse Gamer - Mastermouse CM101 - 2000 DPI</option>
+
+                            <option value="2" data-description="Á vista R$ 315,87 | No Cartão em até 12x (34,56)"
+                            data-imagesrc="imgMontePc/mouse2.png">Mouse Gamer - Harpoon RGB - 6000 DPI </option>
+
+                            <option value="3" data-description="Á vista R$ 58,02 | No Cartão em até 12x (5,78)"
+                            data-imagesrc="imgMontePc/mouse3.png">Mouse Gamer - 2000 DPI USB</option>
+                        </select>
+
+                        <br>
+
+                        <h3> Teclado </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick11">
+                        <option value="Selecione" data-description="Selecione..."
+                        data-imagesrc=""></option>
+
+                            <option value="1" data-description="Á vista R$ 80,28 | No Cartão em até 12x (7,60)"
+                            data-imagesrc="imgMontePc/teclado.png">Teclado - Action TC-200</option>
+
+                            <option value="2" data-description="Á vista R$ 499,34 | No Cartão em até 12x (47,82)"
+                            data-imagesrc="imgMontePc/teclado2.png">Teclado - CK350 Mecânico Switch Red RGB USB</option>
+
+                            <option value="3" data-description="Á vista R$ 399,19 | No Cartão em até 12x (38,23)"
+                            data-imagesrc="imgMontePc/teclado3.png">Teclado - Fortrek Black Hawk Mecânico Switch Blue RGB </option>
+                        </select>
+
+                        
+                        <br>
+
+                        <h3> Head Set </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick12">
+                        <option value="Selecione" data-description="Selecione..."
+                        data-imagesrc=""></option>
+
+                            <option value="Monitor" data-description="Á vista R$ 469,90 | No Cartão em até 12x (45,87)"
+                            data-imagesrc="imgMontePc/headSet.png">Hyper X - Cloud Core</option>
+                        </select>
+
+                        <br>
+
+                        <h3> Monitor </h3>
+                        <input type="number" min="0" class="input-numero">
+
+                        <select name="" id="slick13">
+                        <option value="Selecione" data-description="Selecione..."
+                        data-imagesrc=""></option>
+
+                            <option value="Monitor" data-description="Á vista R$ 794,32 | No Cartão em até 12x (73,21)"
+                            data-imagesrc="imgMontePc/monitor.png">Monitor - 21,5" Led Preto Full HD</option>
+
+                            <option value="Sei la" data-description="Á vista R$ 1593,89 | No Cartão em até 12x (153,12)"
+                            data-imagesrc="imgMontePc/monitor2.png">Monitor - 23,5" Full HD 144HZ </option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Comprar -->
+                    <div class="grid-4">
+                    <div  style="color: rgb(245, 245, 245);">
+                        <span style="font-size: 25px;"> Seu Pc está saindo por: </span> <br> <br>
+            
+                        <div style="background-color: rgb(66, 63, 63); text-align: center; padding: 15px; border: 3px solid black;" >
+                            <span style="font-size: 20px;"> 12x de ( R$ <label for="" id="totalCartao"> 00,00 </label>  ) <br> Sem juros no Cartão <br> <br>
+                            Ou <br> <br> R$ <label for="" id="totalBoleto"> 000,00 </label> <br> Á vista no Boleto </span>
+                        </div> <br>
+            
+                        <center>  <button type="button" class="btn btn-primary btn-lg">Comprar</button></center>
+                        
+                        <br>
+                        <span style="font-size: 20px;"> Meios de pagamento </span>
+                        <br>
+                        <div  style="background-color: rgb(66, 63, 63);padding: 10px; margin-top: 5px; border: 3px solid black;"">
+                        <span class="cartaoCredito" style="font-size: 15px;"> Cartões de Crédito </span>
+            
+                        <img src="imgMontePc/Visa.png" alt="Visa" width="30" height="30" style="margin-top: 10px; margin-right: 10px;"> <img src="imgMontePc/MasterCard.png" alt="mastercard"  width="30" height="30" style=" margin-right: 10px;">
+                        <img src="imgMontePc/Elo.png" alt="Elo" width="30" height="30" style="margin-right: 10px;"> <img src="imgMontePc/DinersClub.png" alt="DinersClub"  width="50" height="30"> <br> <br>
+
+                        <span class="cartaoCredito" style="font-size: 15px;"> Boleto </span>
+                        <br>
+                        <img src="imgMontePc/boleto.jpg" alt="Boleto" width="30" height="30" style="margin-right: 10px;">
+
+                        </div>
+                    </div>
+                    </div>
+
+
+
+            </section> <br>
+
+            <footer class="bg-dark col-12 final" style="color: rgb(245, 245, 245); border-top: 2px solid black;">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm">
+                        Copyright © 2020
+                    </div>
+                    <div class="col-sm">
+                        4739-3664
+                    </div>
+                    <div class="col-sm">
+                        <a href="#"> Quem Somos </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="#"> Certificados de Segurança </a>
+                    </div>
+                </div>
+            </footer>
+             
+            <br>
+           
+
+   
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   <!-- <script src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script> -->
+    <script src="jsMontePc/selects.js"></script>
+    <script>
+       $("#slick").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+
+       })
+       $("#slick2").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+
+       })
+       $("#slick3").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick4").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick5").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick6").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick7").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick8").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick9").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick10").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick11").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick12").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+       $("#slick13").ddslick({
+          width:"100%",
+          imagePosition:"left",
+          selectText:"Selecione...",
+          onSelect: function(data){
+            $("#selected").html(data.selectedData.value);
+          }
+       })
+    </script>
+
+    
+
+</body>
+
+</html>
